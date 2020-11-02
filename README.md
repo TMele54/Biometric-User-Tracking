@@ -53,7 +53,7 @@ dlib (Ubuntu): https://www.learnopencv.com/install-dlib-on-ubuntu/
 
 Anthony Mele – tony@datasciencenewyork.com
 
-Distributed under the MIT license. See ``LICENSE`` for more information.
+Distributed under the MIT license. 
 
 [https://github.com/TMele54/BiometricUserTracking] (https://github.com/TMele54/)
 
