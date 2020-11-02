@@ -7,7 +7,7 @@ I built this package to lay the ground work for building a high performance UAV 
 
 ## Installation
 
-Windows/ Linux (Beagle Bone, Arduiono):
+Windows/ Linux (Beagle Bone, Arduino):
 
 ```sh
 git clone https://github.com/TMele54/BiometricUserTracking.git
