@@ -7,68 +7,51 @@ I built this package to lay the ground work for building a high performance UAV 
 
 ## Installation
 
-OS X & Linux:
+Windows/ Linux (Beagle Bone, Arduiono):
 
 ```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
+git clone https://github.com/TMele54/BiometricUserTracking.git
 ```
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Execute the following:
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+Replace tony.jpg in the encoding_images folder with a new .jpg image of a user's face. 
+
+git add encoding_images/
+
+python3 start.py --images=encoding_images
+
+cd multitrack/
+
+python3 multitrack.py
+
+...
+
+If you would like to track something like a backetball, Execute the following:
+
+cd multitrack/
+
+python3 multiChipTrack.py
+
+Use the GUI to define a region of interest aroudn the Basketball
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+This requires dlib and OpenCV.
 
-```sh
-make install
-npm test
-```
+OpenCV (Windows & Linux): pip install opencv-python opencv-contrib-python
 
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
+Dlib (Windows): https://medium.com/analytics-vidhya/how-to-install-dlib-library-for-python-in-windows-10-57348ba1117f
+dlib (Ubuntu): https://www.learnopencv.com/install-dlib-on-ubuntu/
+ 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Anthony Mele – tony@datasciencenewyork.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/TMele54/BiometricUserTracking] (https://github.com/TMele54/)
 
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+ 
