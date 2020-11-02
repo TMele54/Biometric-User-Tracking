@@ -19,6 +19,7 @@ Execute the following:
 
 Replace tony.jpg in the encoding_images folder with a new .jpg image of a user's face. 
 
+```sh
 git add encoding_images/
 
 python3 start.py --images=encoding_images
@@ -26,14 +27,16 @@ python3 start.py --images=encoding_images
 cd multitrack/
 
 python3 multitrack.py
-
+```
 ...
 
 If you would like to track something like a backetball, Execute the following:
 
+```sh
 cd multitrack/
 
 python3 multiChipTrack.py
+```
 
 Use the GUI to define a region of interest aroudn the Basketball
 
@@ -41,7 +44,7 @@ Use the GUI to define a region of interest aroudn the Basketball
 
 This requires dlib and OpenCV.
 
-OpenCV (Windows & Linux): pip install opencv-python opencv-contrib-python
+OpenCV (Windows & Linux): ```sh pip install opencv-python opencv-contrib-python ```
 
 Dlib (Windows): https://medium.com/analytics-vidhya/how-to-install-dlib-library-for-python-in-windows-10-57348ba1117f
 dlib (Ubuntu): https://www.learnopencv.com/install-dlib-on-ubuntu/
