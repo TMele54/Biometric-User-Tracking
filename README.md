@@ -28,7 +28,7 @@ cd multitrack/
 
 python3 multitrack.py
 ```
-...
+##
 
 If you would like to track something like a backetball, Execute the following:
 
@@ -38,7 +38,7 @@ cd multitrack/
 python3 multiChipTrack.py
 ```
 
-Use the GUI to define a region of interest aroudn the Basketball
+Use the GUI to define a region of interest around the Basketball
 
 ## Development setup
 
