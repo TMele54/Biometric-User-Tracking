@@ -1,7 +1,7 @@
 # Biometric User Tracking
-> This repo uses several different Object Tracking Patterns to track a person's motion in real time with very strong reliability. These Algorithms are initiated using Facial Recognition Landmark Detection and Eucluian Distance via an input image 'key' to ensure the correct user is being tracked. once the user is authenticated facial recognition is ignored and so the user can turn thier back ot the camera or cover their face with no loss in motion capture. OpenCV Trackers Included: 'BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW', 'GOTURN', 'MOSSE', 'CSRT'
+> This repo uses several different Object Tracking Patterns to track a person's motion in real time with very strong reliability. These Algorithms are initiated using Facial Recognition Landmark Detection and Eucluian Distance via an input image 'key' to ensure the correct user is being tracked. OpenCV Trackers Included: 'BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW', 'GOTURN', 'MOSSE', 'CSRT'
 
-I built this package to
+I built this package to lay the ground work for building a high performance UAV from scratch with advanced Computer Vision applications on board. All that is needed to use this package in a single image of the indended trackee's face. The code will analyze the user's input image and define a 128 Dimension Vector which is saved to disk. When you execute the multitrack algorithm, an initial frame is captured and all users in the image are scanned. Minimum Eucludian Distance is used to identify and track the intended user. Once the individual is identified, the facial recognition and landmark algorithms are scrapped and the algorithm runs purely with motion tracking. This allows trackers like 'GOTURN' to track the user without requiring the person's face to be in the frame. For example, you may want to follow the user while they are riding a bike.
 
 ![](header.png)
 
